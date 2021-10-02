@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+ 
+<html>
+ 
+<head>
+    <title>Simple Webpage</title>
+ 
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+ 
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            cursor: pointer;
+        }
+ 
+        .background {
+            background: black;
+            background-blend-mode: darken;
+            background-size: cover;
+        }
+ 
+        .nav-list {
+            width: 70%;
+            display: flex;
+            align-items: center;
+        }
+ 
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+ 
+        
+ 
+        .nav-list li {
+            list-style: none;
+            padding: 26px 30px;
+        }
+ 
+        .nav-list li a {
+            text-decoration: none;
+            color: white;
+        }
+ 
+        .nav-list li a:hover {
+            color: grey;
+        }
+ 
+        .rightnav {
+            width: 30%;
+            text-align: right;
+        }
+ 
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid black;
+            border-radius: 9px;
+        }
+ 
+        .firstsection {
+            background-color: indianred;
+            height: 400px;
+        }
+ 
+        .secondsection {
+            background-color: green;
+            height: 400px;
+        }
+ 
+        .box-main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            max-width: 80%;
+            margin: auto;
+            height: 80%;
+        }
+ 
+        .firsthalf {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+ 
+        .secondhalf {
+            width: 30%;
+        }
+ 
+        .text-big {
+            font-family: 'Piazzolla', serif;
+            font-weight: bold;
+            font-size: 35px;
+        }
+ 
+        .text-small {
+            font-size: 18px;
+        }
+ 
+        .btn {
+            padding: 8px 20px;
+            margin: 7px 0;
+            border: 2px solid white;
+            border-radius: 8px;
+            background: none;
+            color: white;
+            cursor: pointer;
+        }
+ 
+        .btn-sm {
+            padding: 6px 10px;
+            vertical-align: middle;
+        }
+ 
+        .section {
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 90%;
+            margin: auto;
+        }
+ 
+        .section-Left {
+            flex-direction: row-reverse;
+        }
+ 
+        .paras {
+            padding: 0px 65px;
+        }
+ 
+        .center {
+            text-align: center;
+        }
+ 
+        .text-footer {
+            text-align: center;
+            padding: 30px 0;
+            font-family: 'Ubuntu', sans-serif;
+            display: flex;
+            justify-content: center;
+            color: white;
+        }
+    </style>
+</head>
+ 
+<body>
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <li><a href="#web">Chicken</a></li>
+            <li><a href="#program">Beef Brisket</a></li>
+            <li><a href="#course">Pork Chops</a></li>
+        </ul>
+    </nav>
+ 
+    <section class="firstsection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <h1 class="text-big" id="web">Chicken</h1>
+                <p class="text-small">
+                    Servings Per Recipe: 4 Calories: 172 % Daily Value * Protein: 16.7g 34 % Carbohydrates: 25.6g 8 % Dietary Fiber: 0.5g 2 % Sugars: 0.7g
+                    Fat: 3.7g 6 % Saturated Fat: 1g 5 % Cholesterol: 72.2mg 24 % Vitamin A Iu: 363.6IU 7 % Niacin Equivalents: 7.7mg 60 % Vitamin B6: 0.3mg
+                    19 % Vitamin C: 0.8mg 1 % Folate: 8.2mcg 2 % Calcium: 17.7mg 2 % Iron: 0.9mg 5 % Magnesium: 15.5mg 6 % Potassium: 149mg 4 % Sodium: 688.7mg 28 % Calories From Fat: 33.1
+                </p>
+ 
+ 
+            </div>
+        </div>
+    </section>
+ 
+    <section class="secondsection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <h1 class="text-big" id="program">
+                    Beef Brisket
+                </h1>
+                <p class="text-small">
+                    Servings Per Recipe: 8 Calories: 615.5% Daily Value *Protein: 30g 60 %Carbohydrates: 35.6g 12 %Dietary Fiber: 0.2g 1 %Sugars: 33.4g Fat: 39.2g 60 %Saturated Fat: 15.4g 77 %Cholesterol: 116.6mg 39 %Vitamin A Iu: 236IU 05 %Niacin Equivalents: 7.6mg 58 %Vitamin B6: 0.4mg 22 %Vitamin C: 4.1mg 07 %Folate: 11.4mcg 03 %Calcium: 29.1mg 03 %Iron: 3.4mg 19 %Magnesium: 31.4mg 11 %Potassium: 448.9mg 13 %Sodium: 798.8mg 32 %Thiamin: 0.1mg 10 %Calories From Fat: 353
+                </p>
+ 
+ 
+            </div>
+        </div>
+    </section>
+ 
+    <section class="section">
+        <div class="paras">
+            <h1 class="sectionTag text-big">Pork Chops</h1>
+ 
+            <p class="sectionSubTag text-small">
+                Servings Per Recipe: 4 Calories: 262.1% Daily Value *Protein: 16.9g 34 % Carbohydrates: 26.1g 8 % Dietary Fiber: 1.2g 5 % Sugars: 23.1g Fat: 10.3g 16 % Saturated Fat: 3.8g 19 % Cholesterol: 42.9mg 14 % Vitamin A Iu: 153.7IU 3 % Niacin Equivalents: 6.1mg 47 % Vitamin B6: 0.3mg 18 % Vitamin C: 7.7mg 13 % Folate: 11.3mcg 3 % Calcium: 67.5mg 7 % Iron: 1mg 6 % Magnesium: 25.1mg 9 % Potassium: 359.4mg 10 % Sodium: 110.4mg 4 % Thiamin: 0.3mg 35 % Calories From Fat: 92.7
+            </p>
+ 
+ 
+        </div>
+ 
+        
+    </section>
+ 
+    <footer class="background">
+        <p class="text-footer">
+            Copyright ©-All rights are reserved
+        </p>
+ 
+ 
+    </footer>
+</body>
+ 
+</html>
